@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  line-height: 1.7rem;
+  background-image: url(BG.png);
+}
+.quiz-container {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;  text-shadow: 1px 1px white;
+  padding: 3rem;
+  shape-rendering: crisp;
+  
+  
+  width: 50%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  min-height: 100vh;
+  border-radius: 10vw;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  color: #000000;
+  font-weight: 600;
+  font-size: 4.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.question {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.option {
+  
+  padding: 1rem;
+  color: #000000;
+  background: rgba(14, 0, 0, 0.425);
+  width: 80%;
+  border-radius: 38px;
+  transition: all 0.3s;
+}
+.option:hover {
+  background: rgba(68, 0, 255, 0.116);
+}
+.option input:checked .option {
+  background: #08038c;
+  color: #000;
+}
+.controls > * {
+  margin: 1rem;
+}
+button {
+  padding: 0.5rem 1.5rem;
+  border: 5px solid;
+  box-shadow: 0 0 0 1px rgba(12, 0, 0, 0.1);
+  border-radius: 30px;
+  border-color: #000000;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  outline: none;
+  transform: scale(0.98);
+  transition: all 0.2s;
+}
+button.previous {
+  background: #000000;
+}
+button.next {
+  background: #000000;
+}
+button.restart {
+  background: #0cf574;
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s;
+}
+button.restart:hover {
+  color: #383838;
+}
+button:hover,
+button:focus {
+  transform: scale(1);
+  font-weight: 500;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  min-height: 100vh;
+}
+.final-score {
+  color: #000000;
+}
+.summary {
+  font-size: 1rem;
+  text-shadow: 1px 1px #e6000050;
+  color: #000000;
+  background: white;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.summary h1 {
+  align-self: center;
+}
+
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo a span {
+  color: #ffc451;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+html, body {
+height: 95%; 
+}
